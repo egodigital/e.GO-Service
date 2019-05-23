@@ -63,7 +63,7 @@ class ServiceListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return statusList == nil ? 0 : 5
+        return statusList == nil ? 0 : ServiceTypeCell.CellType.allCases.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -72,14 +72,16 @@ class ServiceListViewController: UITableViewController {
         
         switch indexPath.row {
         case 0:
-            cell.type = .tire
+            cell.type = .batteryCharge
         case 1:
-            cell.type = .brake
+            cell.type = .tire
         case 2:
-            cell.type = .wipingWater
+            cell.type = .brake
         case 3:
-            cell.type = .motorControlLamp
+            cell.type = .wipingWater
         case 4:
+            cell.type = .motorControlLamp
+        case 5:
             cell.type = .batteryHealth
         default:
             break
@@ -88,8 +90,9 @@ class ServiceListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
+        let type = (self.tableView(tableView, cellForRowAt: indexPath) as! ServiceTypeCell).type!
+        switch type {
+        case .tire:
             let vc = UIStoryboard(name: "TireServiceViewController", bundle: nil).instantiateInitialViewController() as! TireServiceViewController
             vc.vehicleSignalList = statusList
             self.navigationController?.pushViewController(vc, animated: true)

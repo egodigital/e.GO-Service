@@ -24,6 +24,7 @@ struct VehicleSignalList: Codable {
         case tirePressureFrontLeft = "tire_pressure_front_left"
         case tirePressureFrontRight = "tire_pressure_front_right"
         case motorControlLamp = "motor_control_lamp"
+        case batteryCharge = "battery_state_of_charge"
     }
 
     let batteryHealth: Double
@@ -33,15 +34,34 @@ struct VehicleSignalList: Codable {
     let tirePressureBackRight: Double
     let tirePressureFrontLeft: Double
     let tirePressureFrontRight: Double
+    let batteryCharge: Double
     let motorControlLamp: OnOffStatus
     
 }
 
 extension VehicleSignalList {
     func tirePressureGood() -> Bool {
-        return self.tirePressureBackLeft >= 2 &&
-            self.tirePressureBackRight >= 2 &&
-            self.tirePressureFrontLeft >= 2 &&
+        return
+            self.tirePressureBackLeft   >= 2 &&
+            self.tirePressureBackRight  >= 2 &&
+            self.tirePressureFrontLeft  >= 2 &&
             self.tirePressureFrontRight >= 2
     }
+    
+    func brakeFluidLevelGood() -> Bool {
+        return self.brakeFluidLevel >= 0.75
+    }
+    
+    func wipingWaterLevelGood() -> Bool {
+        return self.wipingWaterLevel >= 0.20
+    }
+    
+    func batteryHealthLevelGood() -> Bool {
+        return self.batteryHealth > 0.20
+    }
+    
+    func batteryChargeGood() -> Bool {
+        return batteryCharge > 50
+    }
+    
 }
