@@ -13,9 +13,17 @@ class ServiceTypeCell: UITableViewCell {
     @IBOutlet var icon: UIImageView!
     @IBOutlet var mainLabel: UILabel!
     
+    var vehicleSignalList: VehicleSignalList!
     
     enum CellType {
         case tire, brake, wipingWater, motorControlLamp, batteryHealth
+    }
+    
+    func tirePressureGood() -> Bool {
+        return vehicleSignalList.tirePressureBackLeft >= 2 &&
+            vehicleSignalList.tirePressureBackRight >= 2 &&
+            vehicleSignalList.tirePressureFrontLeft >= 2 &&
+            vehicleSignalList.tirePressureFrontRight >= 2
     }
     
     var type: CellType? {
@@ -24,6 +32,7 @@ class ServiceTypeCell: UITableViewCell {
                 switch type {
                 case .tire:
                     icon.image = UIImage(named: "tire")
+                    mainLabel.text = "Tire pressure is \(tirePressureGood() ? "good" : "bad")"
                 case .brake:
                     icon.image = UIImage(named: "tire")
                 case .wipingWater:
