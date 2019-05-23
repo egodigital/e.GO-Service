@@ -19,7 +19,7 @@ class MapCell: UITableViewCell {
         image.clipsToBounds = true
         let title = UILabel()
         title.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        title.text = "Explore your e.GO Service Points"
+        title.text = "Explore our e.GO Service Points"
         title.textColor = .white
         
         self.contentView.addSubview(image)
