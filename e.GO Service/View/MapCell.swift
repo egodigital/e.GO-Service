@@ -14,16 +14,26 @@ class MapCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        
-        
+        let image = UIImageView(image: UIImage(named: "ego"))
+        image.contentMode = .scaleAspectFill
+        image.clipsToBounds = true
         let title = UILabel()
-        title.text = "Explore stuff"
+        title.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        title.text = "Explore your e.GO Service Points"
+        title.textColor = .white
         
-        self.addSubview(title)
+        self.contentView.addSubview(image)
+        self.contentView.addSubview(title)
         
         title.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
+            make.top.leading.equalToSuperview().offset(10)
         }
+        
+        image.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+            make.height.equalTo(180)
+        }
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

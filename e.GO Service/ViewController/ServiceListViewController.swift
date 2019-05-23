@@ -30,9 +30,7 @@ class ServiceListViewController: UITableViewController {
         
         refreshController.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
         self.tableView.refreshControl = refreshController
-        
-        self.tableView.rowHeight = 130
-        
+                
         tableView.separatorStyle = .none
         
         DispatchQueue.main.async {
@@ -65,7 +63,7 @@ class ServiceListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return statusList == nil ? 0 : ServiceTypeCell.CellType.allCases.count
+        return statusList == nil ? 1 : ServiceTypeCell.CellType.allCases.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -118,4 +116,7 @@ class ServiceListViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return indexPath.row == 0 ? 180 : 130
+    }
 }
