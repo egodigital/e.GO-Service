@@ -37,6 +37,8 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
         }
         
         mapView.addAnnotations(pointAnnotations)
+        
+        mapView.
     }
     
     // MARK: - MGLMapViewDelegate methods
