@@ -26,6 +26,8 @@
 		DC235B38229707940014FE7E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B37229707940014FE7E /* MapViewController.swift */; };
 		DC235B3B22970AF70014FE7E /* ChargeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B3A22970AF70014FE7E /* ChargeLocation.swift */; };
 		DC235B3D2297120A0014FE7E /* UIColor+egoblue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B3C2297120A0014FE7E /* UIColor+egoblue.swift */; };
+		DC235B3F229720A40014FE7E /* CalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B3E229720A40014FE7E /* CalloutView.swift */; };
+		DC235B412297232C0014FE7E /* CalloutSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC235B402297232C0014FE7E /* CalloutSubview.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		DC235B37229707940014FE7E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DC235B3A22970AF70014FE7E /* ChargeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeLocation.swift; sourceTree = "<group>"; };
 		DC235B3C2297120A0014FE7E /* UIColor+egoblue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+egoblue.swift"; sourceTree = "<group>"; };
+		DC235B3E229720A40014FE7E /* CalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
+		DC235B402297232C0014FE7E /* CalloutSubview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalloutSubview.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 			children = (
 				C9D91A742296C5790053BB98 /* ServiceListViewController.swift */,
 				DC235B37229707940014FE7E /* MapViewController.swift */,
+				DC235B3E229720A40014FE7E /* CalloutView.swift */,
+				DC235B402297232C0014FE7E /* CalloutSubview.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				C92F24D02296A67500478C8C /* Assets.xcassets in Resources */,
 				C92F24CB2296A67400478C8C /* Main.storyboard in Resources */,
 				DC235B2E2296C5250014FE7E /* TireServiceViewController.storyboard in Resources */,
+				DC235B412297232C0014FE7E /* CalloutSubview.xib in Resources */,
 				DC235B292296C2150014FE7E /* ServiceTypeCell.xib in Resources */,
 				DC235B362297075D0014FE7E /* energyStations.json in Resources */,
 				DC235B342296E9840014FE7E /* BatteryChargeViewController.storyboard in Resources */,
@@ -329,6 +336,7 @@
 				C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */,
 				DC235B322296E9790014FE7E /* BatteryChargeViewController.swift in Sources */,
 				DC235B38229707940014FE7E /* MapViewController.swift in Sources */,
+				DC235B3F229720A40014FE7E /* CalloutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
