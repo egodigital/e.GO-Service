@@ -31,6 +31,18 @@ class ServiceListViewController: UITableViewController {
         
         self.tableView.rowHeight = 130
         
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 100))
+        let button = UIButton()
+        button.setTitle("Wanna see some cool stuff?", for: .normal)
+        view.addSubview(button)
+        button.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        button.setTitleColor(.black, for: .normal)
+        button.addTarget(self, action: #selector(pressedButton(_:)), for: .touchUpInside)
+        view.layoutIfNeeded()
+        self.tableView.tableHeaderView = view
+        
         tableView.separatorStyle = .none
         
         DispatchQueue.main.async {
@@ -106,4 +118,8 @@ class ServiceListViewController: UITableViewController {
         }
     }
     
+    @objc func pressedButton(_ button: UIButton) {
+        let map = MapViewController()
+        self.navigationController?.pushViewController(map, animated: true)
+    }
 }

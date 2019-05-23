@@ -64,7 +64,7 @@ class API {
                 } else if let data = data {
                     let decoder = JSONDecoder()
                     
-                    print(String.init(bytes: data, encoding: .utf8))
+                    print(String.init(bytes: data, encoding: .utf8) ?? "No Data")
                     
                     do {
                         let vehicleSignalList = try decoder.decode(VehicleSignalList.self, from: data)

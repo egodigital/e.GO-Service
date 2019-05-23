@@ -21,6 +21,9 @@
 		DC235B302296C6800014FE7E /* TireServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B2F2296C6800014FE7E /* TireServiceViewController.swift */; };
 		DC235B322296E9790014FE7E /* BatteryChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B312296E9790014FE7E /* BatteryChargeViewController.swift */; };
 		DC235B342296E9840014FE7E /* BatteryChargeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC235B332296E9840014FE7E /* BatteryChargeViewController.storyboard */; };
+		DC235B362297075D0014FE7E /* energyStations.json in Resources */ = {isa = PBXBuildFile; fileRef = DC235B352297075D0014FE7E /* energyStations.json */; };
+		DC235B38229707940014FE7E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B37229707940014FE7E /* MapViewController.swift */; };
+		DC235B3B22970AF70014FE7E /* ChargeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B3A22970AF70014FE7E /* ChargeLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		DC235B2F2296C6800014FE7E /* TireServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TireServiceViewController.swift; sourceTree = "<group>"; };
 		DC235B312296E9790014FE7E /* BatteryChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryChargeViewController.swift; sourceTree = "<group>"; };
 		DC235B332296E9840014FE7E /* BatteryChargeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatteryChargeViewController.storyboard; sourceTree = "<group>"; };
+		DC235B352297075D0014FE7E /* energyStations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = energyStations.json; sourceTree = "<group>"; };
+		DC235B37229707940014FE7E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DC235B3A22970AF70014FE7E /* ChargeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 				C92F24CF2296A67500478C8C /* Assets.xcassets */,
 				C92F24D12296A67500478C8C /* LaunchScreen.storyboard */,
 				C92F24D42296A67500478C8C /* Info.plist */,
+				DC235B3922970AE90014FE7E /* Energy Stations */,
 			);
 			path = "e.GO Service";
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				C9D91A742296C5790053BB98 /* ServiceListViewController.swift */,
+				DC235B37229707940014FE7E /* MapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -150,6 +158,15 @@
 				DC235B312296E9790014FE7E /* BatteryChargeViewController.swift */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		DC235B3922970AE90014FE7E /* Energy Stations */ = {
+			isa = PBXGroup;
+			children = (
+				DC235B352297075D0014FE7E /* energyStations.json */,
+				DC235B3A22970AF70014FE7E /* ChargeLocation.swift */,
+			);
+			path = "Energy Stations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +240,7 @@
 				C92F24CB2296A67400478C8C /* Main.storyboard in Resources */,
 				DC235B2E2296C5250014FE7E /* TireServiceViewController.storyboard in Resources */,
 				DC235B292296C2150014FE7E /* ServiceTypeCell.xib in Resources */,
+				DC235B362297075D0014FE7E /* energyStations.json in Resources */,
 				DC235B342296E9840014FE7E /* BatteryChargeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,8 +317,10 @@
 				DC235B2B2296C2B80014FE7E /* ServiceTypeCell.swift in Sources */,
 				C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */,
 				DC235B302296C6800014FE7E /* TireServiceViewController.swift in Sources */,
+				DC235B3B22970AF70014FE7E /* ChargeLocation.swift in Sources */,
 				C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */,
 				DC235B322296E9790014FE7E /* BatteryChargeViewController.swift in Sources */,
+				DC235B38229707940014FE7E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
