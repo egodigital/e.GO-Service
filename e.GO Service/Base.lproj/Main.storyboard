@@ -38,7 +38,7 @@
                             <outlet property="delegate" destination="VJ9-9c-v8s" id="tKm-of-kdx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="e.GO Service 👨‍🔧" id="PJn-bq-8DB"/>
+                    <navigationItem key="navigationItem" title="e.GO Service 👩‍🔧👨‍🔧" id="PJn-bq-8DB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWL-tX-iJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
