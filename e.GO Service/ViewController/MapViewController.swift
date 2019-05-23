@@ -38,7 +38,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
         
         mapView.addAnnotations(pointAnnotations)
         
-        mapView.
+        mapView.attributionButton.isHidden = true
     }
     
     // MARK: - MGLMapViewDelegate methods
