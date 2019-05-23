@@ -20,6 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let mainSB = UIStoryboard(name: "Main", bundle: nil)
+        let mainNavController = mainSB.instantiateInitialViewController() as! UINavigationController
+        (mainNavController.viewControllers.first as! ServiceListViewController).api = self.api
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        self.window?.backgroundColor = UIColor.white
+        
+        self.window?.rootViewController = mainNavController
+        
+        self.window?.makeKeyAndVisible()
+
+        
         let notificationCenter = UNUserNotificationCenter.current()
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]
         notificationCenter.requestAuthorization(options: options) {

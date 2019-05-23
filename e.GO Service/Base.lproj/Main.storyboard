@@ -10,35 +10,6 @@
     </dependencies>
     <scenes>
         <!--e.GO Service-->
-        <scene sceneID="C7J-Mf-eJQ">
-            <objects>
-                <tableViewController id="L76-tW-hwS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="W9e-zE-nP5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oru-0w-Jbc">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oru-0w-Jbc" id="Dda-xf-toy">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="L76-tW-hwS" id="LKJ-of-90Q"/>
-                            <outlet property="delegate" destination="L76-tW-hwS" id="fkm-We-mlo"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="e.GO Service" id="UEc-eK-rQK"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aEu-EH-2fw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="265" y="131"/>
-        </scene>
-        <!--e.GO Service-->
         <scene sceneID="emd-wL-YtO">
             <objects>
                 <navigationController title="e.GO Service" id="bIa-5b-Jqm" sceneMemberID="viewController">
@@ -47,12 +18,41 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="L76-tW-hwS" kind="relationship" relationship="rootViewController" id="ac3-zb-mtM"/>
+                        <segue destination="VJ9-9c-v8s" kind="relationship" relationship="rootViewController" id="1Y0-G8-YuA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVS-0s-aB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-653" y="131"/>
+        </scene>
+        <!--e.GO Service-->
+        <scene sceneID="olb-DK-Ihf">
+            <objects>
+                <tableViewController title="e.GO Service" id="VJ9-9c-v8s" customClass="ServiceListViewController" customModule="e_GO_Service" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZdO-7j-eyq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JQo-xq-TjG">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JQo-xq-TjG" id="HZg-FY-r19">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VJ9-9c-v8s" id="8dD-ps-rSc"/>
+                            <outlet property="delegate" destination="VJ9-9c-v8s" id="tKm-of-kdx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="e.GO Service" id="PJn-bq-8DB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWL-tX-iJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="131"/>
         </scene>
     </scenes>
 </document>
