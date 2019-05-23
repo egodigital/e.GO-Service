@@ -14,10 +14,21 @@ class ServiceListViewController: UITableViewController {
     
     var api: API!
     
+    var statusList: VehicleSignalList? {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.register(UINib(nibName: "ServiceTypeCell", bundle: nil), forCellReuseIdentifier: "serviceCell")
+        
         refreshController.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        self.tableView.refreshControl = refreshController
+        
+        self.tableView.rowHeight = 130
         
         self.update()
     }
@@ -27,11 +38,40 @@ class ServiceListViewController: UITableViewController {
     }
     
     func update() {
-        
+        api.vehicleSignalList().done { (list) in
+            self.statusList = list
+        }.cauterize()
     }
     
-    func presentData(data: VehicleSignalList) {
-        
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return statusList == nil ? 0 : 5
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "serviceCell") as? ServiceTypeCell else { return UITableViewCell() }
+        
+        switch indexPath.row {
+        case 0:
+            cell.type = .tire
+        case 1:
+            cell.type = .brake
+        case 2:
+            cell.type = .wipingWater
+        case 3:
+            cell.type = .motorControlLamp
+        case 4:
+            cell.type = .batteryHealth
+        default:
+            break
+        }
+        return cell
+    }
+    
     
 }

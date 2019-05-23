@@ -10,8 +10,8 @@ import UIKit
 
 class ServiceTypeCell: UITableViewCell {
     
-    @IBOutlet weak var icon: UIImageView!
-    @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet var icon: UIImageView!
+    @IBOutlet var mainLabel: UILabel!
     
     
     enum CellType {
@@ -37,5 +37,8 @@ class ServiceTypeCell: UITableViewCell {
         }
     }
     
+    override func awakeFromNib() {
+        
+    }
     
 }
