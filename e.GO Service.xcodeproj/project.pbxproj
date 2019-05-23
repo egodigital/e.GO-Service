@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3C1ED1D4AE049C23EDF12DF9 /* Pods_e_GO_Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44E77515FA92C8827C22430 /* Pods_e_GO_Service.framework */; };
+		C915DF3D2296AC7B008CBC8D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C915DF3C2296AC7B008CBC8D /* API.swift */; };
+		C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C915DF3F2296AE2C008CBC8D /* VehicleSignalList.swift */; };
 		C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F24C52296A67400478C8C /* AppDelegate.swift */; };
 		C92F24C82296A67400478C8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F24C72296A67400478C8C /* ViewController.swift */; };
 		C92F24CB2296A67400478C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92F24C92296A67400478C8C /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		324B2E64137A3818B1DB5CEB /* Pods-e.GO Service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e.GO Service.debug.xcconfig"; path = "Target Support Files/Pods-e.GO Service/Pods-e.GO Service.debug.xcconfig"; sourceTree = "<group>"; };
 		857A4E983FF9BA1A919325DA /* Pods-e.GO Service.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e.GO Service.release.xcconfig"; path = "Target Support Files/Pods-e.GO Service/Pods-e.GO Service.release.xcconfig"; sourceTree = "<group>"; };
+		C915DF3C2296AC7B008CBC8D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C915DF3F2296AE2C008CBC8D /* VehicleSignalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSignalList.swift; sourceTree = "<group>"; };
 		C92F24C22296A67400478C8C /* e.GO Service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e.GO Service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92F24C52296A67400478C8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C92F24C72296A67400478C8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,8 +60,24 @@
 				324B2E64137A3818B1DB5CEB /* Pods-e.GO Service.debug.xcconfig */,
 				857A4E983FF9BA1A919325DA /* Pods-e.GO Service.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C915DF3B2296AC6F008CBC8D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C915DF3E2296AE0F008CBC8D /* Model */,
+				C915DF3C2296AC7B008CBC8D /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C915DF3E2296AE0F008CBC8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C915DF3F2296AE2C008CBC8D /* VehicleSignalList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C92F24B92296A67400478C8C = {
@@ -81,6 +101,7 @@
 		C92F24C42296A67400478C8C /* e.GO Service */ = {
 			isa = PBXGroup;
 			children = (
+				C915DF3B2296AC6F008CBC8D /* API */,
 				C92F24C52296A67400478C8C /* AppDelegate.swift */,
 				C92F24C72296A67400478C8C /* ViewController.swift */,
 				C92F24C92296A67400478C8C /* Main.storyboard */,
@@ -209,6 +230,8 @@
 			files = (
 				C92F24CE2296A67400478C8C /* e_GO_Service.xcdatamodeld in Sources */,
 				C92F24C82296A67400478C8C /* ViewController.swift in Sources */,
+				C915DF3D2296AC7B008CBC8D /* API.swift in Sources */,
+				C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */,
 				C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
