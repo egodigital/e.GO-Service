@@ -10,6 +10,7 @@
 		3C1ED1D4AE049C23EDF12DF9 /* Pods_e_GO_Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44E77515FA92C8827C22430 /* Pods_e_GO_Service.framework */; };
 		C915DF3D2296AC7B008CBC8D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C915DF3C2296AC7B008CBC8D /* API.swift */; };
 		C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C915DF3F2296AE2C008CBC8D /* VehicleSignalList.swift */; };
+		C91CA352229713AD002AF66F /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CA351229713AD002AF66F /* MapCell.swift */; };
 		C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F24C52296A67400478C8C /* AppDelegate.swift */; };
 		C92F24CB2296A67400478C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92F24C92296A67400478C8C /* Main.storyboard */; };
 		C92F24D02296A67500478C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92F24CF2296A67500478C8C /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		857A4E983FF9BA1A919325DA /* Pods-e.GO Service.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e.GO Service.release.xcconfig"; path = "Target Support Files/Pods-e.GO Service/Pods-e.GO Service.release.xcconfig"; sourceTree = "<group>"; };
 		C915DF3C2296AC7B008CBC8D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C915DF3F2296AE2C008CBC8D /* VehicleSignalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSignalList.swift; sourceTree = "<group>"; };
+		C91CA351229713AD002AF66F /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
 		C92F24C22296A67400478C8C /* e.GO Service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e.GO Service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92F24C52296A67400478C8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C92F24CA2296A67400478C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				DC235B2C2296C50C0014FE7E /* DetailView */,
 				DC235B282296C2150014FE7E /* ServiceTypeCell.xib */,
 				DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */,
+				C91CA351229713AD002AF66F /* MapCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				C915DF3D2296AC7B008CBC8D /* API.swift in Sources */,
 				DC235B2B2296C2B80014FE7E /* ServiceTypeCell.swift in Sources */,
 				C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */,
+				C91CA352229713AD002AF66F /* MapCell.swift in Sources */,
 				DC235B302296C6800014FE7E /* TireServiceViewController.swift in Sources */,
 				DC235B3B22970AF70014FE7E /* ChargeLocation.swift in Sources */,
 				C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */,

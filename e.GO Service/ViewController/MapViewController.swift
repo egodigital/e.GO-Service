@@ -21,7 +21,5 @@ class MapViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         mapView.setCenter(CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), zoomLevel: 9, animated: false)
-        
-         
     }
 }
