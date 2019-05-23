@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         locationManager = CLLocationManager()
         locationManager.delegate = self
-        
+        locationManager.requestAlwaysAuthorization()
         return true
     }
 
@@ -112,8 +112,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
             let content = UNMutableNotificationContent()
 
-            content.title = "Title!"
-            content.body = "This is example how to create a Notification"
+            content.title = "e.GO Service"
+            content.body = "Welcome to an e.GO Service Point. Check your car status now."
             content.sound = UNNotificationSound.default
             
             let identifier = "Local Notification"
@@ -143,14 +143,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         switch distance {
         case .unknown:
-            print("unkown")
-            
+            print("unknown")
         case .far:
             print("far")
-            
         case .near:
             print("near")
-            
         case .immediate:
             print("immediate")
         @unknown default:
