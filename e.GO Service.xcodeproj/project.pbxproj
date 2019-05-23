@@ -13,9 +13,9 @@
 		C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F24C52296A67400478C8C /* AppDelegate.swift */; };
 		C92F24C82296A67400478C8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F24C72296A67400478C8C /* ViewController.swift */; };
 		C92F24CB2296A67400478C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92F24C92296A67400478C8C /* Main.storyboard */; };
-		C92F24CE2296A67400478C8C /* e_GO_Service.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C92F24CC2296A67400478C8C /* e_GO_Service.xcdatamodeld */; };
 		C92F24D02296A67500478C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92F24CF2296A67500478C8C /* Assets.xcassets */; };
 		C92F24D32296A67500478C8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92F24D12296A67500478C8C /* LaunchScreen.storyboard */; };
+		DCA29D2E2296B04E008867B9 /* BeaconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA29D2D2296B04E008867B9 /* BeaconController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +27,11 @@
 		C92F24C52296A67400478C8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C92F24C72296A67400478C8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C92F24CA2296A67400478C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C92F24CD2296A67400478C8C /* e_GO_Service.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = e_GO_Service.xcdatamodel; sourceTree = "<group>"; };
 		C92F24CF2296A67500478C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C92F24D22296A67500478C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C92F24D42296A67500478C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D44E77515FA92C8827C22430 /* Pods_e_GO_Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e_GO_Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA29D2D2296B04E008867B9 /* BeaconController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +104,11 @@
 				C915DF3B2296AC6F008CBC8D /* API */,
 				C92F24C52296A67400478C8C /* AppDelegate.swift */,
 				C92F24C72296A67400478C8C /* ViewController.swift */,
+				DCA29D2D2296B04E008867B9 /* BeaconController.swift */,
 				C92F24C92296A67400478C8C /* Main.storyboard */,
 				C92F24CF2296A67500478C8C /* Assets.xcassets */,
 				C92F24D12296A67500478C8C /* LaunchScreen.storyboard */,
 				C92F24D42296A67500478C8C /* Info.plist */,
-				C92F24CC2296A67400478C8C /* e_GO_Service.xcdatamodeld */,
 			);
 			path = "e.GO Service";
 			sourceTree = "<group>";
@@ -147,6 +147,11 @@
 				TargetAttributes = {
 					C92F24C12296A67400478C8C = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -228,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92F24CE2296A67400478C8C /* e_GO_Service.xcdatamodeld in Sources */,
+				DCA29D2E2296B04E008867B9 /* BeaconController.swift in Sources */,
 				C92F24C82296A67400478C8C /* ViewController.swift in Sources */,
 				C915DF3D2296AC7B008CBC8D /* API.swift in Sources */,
 				C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */,
@@ -380,7 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H4K6BXTR7Y;
+				DEVELOPMENT_TEAM = ZXT6586FS8;
 				INFOPLIST_FILE = "e.GO Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,7 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H4K6BXTR7Y;
+				DEVELOPMENT_TEAM = ZXT6586FS8;
 				INFOPLIST_FILE = "e.GO Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,19 +439,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C92F24CC2296A67400478C8C /* e_GO_Service.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C92F24CD2296A67400478C8C /* e_GO_Service.xcdatamodel */,
-			);
-			currentVersion = C92F24CD2296A67400478C8C /* e_GO_Service.xcdatamodel */;
-			path = e_GO_Service.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C92F24BA2296A67400478C8C /* Project object */;
 }
