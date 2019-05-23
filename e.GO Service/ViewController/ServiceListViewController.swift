@@ -30,6 +30,12 @@ class ServiceListViewController: UITableViewController {
         
         self.tableView.rowHeight = 130
         
+        tableView.separatorStyle = .none
+        
+        DispatchQueue.main.async {
+            self.refreshController.beginRefreshing()
+        }
+        
         self.update()
     }
     
@@ -40,10 +46,14 @@ class ServiceListViewController: UITableViewController {
     func update() {
         api.vehicleSignalList().done { (list) in
             self.statusList = list
+            self.tableView.separatorStyle = .singleLine
+        }.catch({ (error) in
+            print(error)
+        }).finally {
             DispatchQueue.main.async {
                 self.refreshController.endRefreshing()
             }
-        }.cauterize()
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -55,8 +65,6 @@ class ServiceListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "serviceCell") as? ServiceTypeCell else { return UITableViewCell() }
         cell.vehicleSignalList = statusList
         
