@@ -73,5 +73,15 @@ class ServiceListViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            let vc = UIStoryboard(name: "TireServiceViewController", bundle: nil).instantiateInitialViewController() as! TireServiceViewController
+            vc.vehicleSignalList = statusList
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
+    }
     
 }

@@ -26,7 +26,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tire pressure is good" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy9-qn-uLo">
-                        <rect key="frame" x="117.5" y="56.5" width="258.5" height="21"/>
+                        <rect key="frame" x="117.5" y="54.5" width="258.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="fgG-3b-vfQ" firstAttribute="top" secondItem="l0M-1U-irj" secondAttribute="top" constant="20" id="6Op-J9-Far"/>
-                    <constraint firstItem="hy9-qn-uLo" firstAttribute="centerY" secondItem="fgG-3b-vfQ" secondAttribute="centerY" constant="2" id="Dpp-QU-uHg"/>
+                    <constraint firstItem="hy9-qn-uLo" firstAttribute="centerY" secondItem="fgG-3b-vfQ" secondAttribute="centerY" id="Dpp-QU-uHg"/>
                     <constraint firstAttribute="trailing" secondItem="hy9-qn-uLo" secondAttribute="trailing" id="KHf-8o-qzg"/>
                     <constraint firstItem="fgG-3b-vfQ" firstAttribute="leading" secondItem="l0M-1U-irj" secondAttribute="leading" constant="20" id="XPK-i5-VzL"/>
                     <constraint firstAttribute="bottom" secondItem="fgG-3b-vfQ" secondAttribute="bottom" constant="20" id="t5E-1t-hWK"/>
