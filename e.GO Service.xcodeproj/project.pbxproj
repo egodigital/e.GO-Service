@@ -17,6 +17,8 @@
 		C9D91A752296C5790053BB98 /* ServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D91A742296C5790053BB98 /* ServiceListViewController.swift */; };
 		DC235B292296C2150014FE7E /* ServiceTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC235B282296C2150014FE7E /* ServiceTypeCell.xib */; };
 		DC235B2B2296C2B80014FE7E /* ServiceTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */; };
+		DC235B2E2296C5250014FE7E /* TireServiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC235B2D2296C5250014FE7E /* TireServiceViewController.storyboard */; };
+		DC235B302296C6800014FE7E /* TireServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B2F2296C6800014FE7E /* TireServiceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D44E77515FA92C8827C22430 /* Pods_e_GO_Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e_GO_Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC235B282296C2150014FE7E /* ServiceTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTypeCell.xib; sourceTree = "<group>"; };
 		DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTypeCell.swift; sourceTree = "<group>"; };
+		DC235B2D2296C5250014FE7E /* TireServiceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TireServiceViewController.storyboard; sourceTree = "<group>"; };
+		DC235B2F2296C6800014FE7E /* TireServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TireServiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,10 +130,20 @@
 		DC235B272296C1FA0014FE7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DC235B2C2296C50C0014FE7E /* DetailView */,
 				DC235B282296C2150014FE7E /* ServiceTypeCell.xib */,
 				DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DC235B2C2296C50C0014FE7E /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				DC235B2D2296C5250014FE7E /* TireServiceViewController.storyboard */,
+				DC235B2F2296C6800014FE7E /* TireServiceViewController.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +215,7 @@
 				C92F24D32296A67500478C8C /* LaunchScreen.storyboard in Resources */,
 				C92F24D02296A67500478C8C /* Assets.xcassets in Resources */,
 				C92F24CB2296A67400478C8C /* Main.storyboard in Resources */,
+				DC235B2E2296C5250014FE7E /* TireServiceViewController.storyboard in Resources */,
 				DC235B292296C2150014FE7E /* ServiceTypeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +291,7 @@
 				C915DF3D2296AC7B008CBC8D /* API.swift in Sources */,
 				DC235B2B2296C2B80014FE7E /* ServiceTypeCell.swift in Sources */,
 				C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */,
+				DC235B302296C6800014FE7E /* TireServiceViewController.swift in Sources */,
 				C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H4K6BXTR7Y;
+				DEVELOPMENT_TEAM = ZXT6586FS8;
 				INFOPLIST_FILE = "e.GO Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H4K6BXTR7Y;
+				DEVELOPMENT_TEAM = ZXT6586FS8;
 				INFOPLIST_FILE = "e.GO Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

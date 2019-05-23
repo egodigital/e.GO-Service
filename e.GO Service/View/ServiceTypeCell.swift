@@ -32,8 +32,6 @@ class ServiceTypeCell: UITableViewCell {
                     icon.image = UIImage(named: "tire")
                 case .batteryHealth:
                     icon.image = UIImage(named: "tire")
-                @unknown default:
-                    break
                 }
             }
         }
