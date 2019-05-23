@@ -12,6 +12,7 @@ class ServiceTypeCell: UITableViewCell {
     
     @IBOutlet var icon: UIImageView!
     @IBOutlet var mainLabel: UILabel!
+    @IBOutlet weak var colorIndicator: UIView!
     
     var vehicleSignalList: VehicleSignalList!
     
@@ -26,6 +27,7 @@ class ServiceTypeCell: UITableViewCell {
                 case .tire:
                     icon.image = UIImage(named: "tire")
                     mainLabel.text = "Tire pressure is \(vehicleSignalList.tirePressureGood() ? "good" : "bad")"
+                    colorIndicator.backgroundColor = vehicleSignalList.tirePressureGood() ? UIColor.green : UIColor.red
                 case .brake:
                     icon.image = UIImage(named: "tire")
                 case .wipingWater:

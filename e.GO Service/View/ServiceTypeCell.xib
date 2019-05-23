@@ -31,17 +31,28 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42e-AR-VYg">
+                        <rect key="frame" x="0.0" y="0.0" width="8" height="134"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="xJC-Nc-O8p"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="fgG-3b-vfQ" firstAttribute="top" secondItem="l0M-1U-irj" secondAttribute="top" constant="20" id="6Op-J9-Far"/>
                     <constraint firstItem="hy9-qn-uLo" firstAttribute="centerY" secondItem="fgG-3b-vfQ" secondAttribute="centerY" id="Dpp-QU-uHg"/>
                     <constraint firstAttribute="trailing" secondItem="hy9-qn-uLo" secondAttribute="trailing" id="KHf-8o-qzg"/>
+                    <constraint firstAttribute="bottom" secondItem="42e-AR-VYg" secondAttribute="bottom" constant="-1" id="KIt-5O-cFQ"/>
                     <constraint firstItem="fgG-3b-vfQ" firstAttribute="leading" secondItem="l0M-1U-irj" secondAttribute="leading" constant="20" id="XPK-i5-VzL"/>
+                    <constraint firstItem="42e-AR-VYg" firstAttribute="leading" secondItem="l0M-1U-irj" secondAttribute="leading" id="ac8-ez-rdI"/>
+                    <constraint firstItem="42e-AR-VYg" firstAttribute="top" secondItem="l0M-1U-irj" secondAttribute="top" id="fCn-69-Leo"/>
                     <constraint firstAttribute="bottom" secondItem="fgG-3b-vfQ" secondAttribute="bottom" constant="20" id="t5E-1t-hWK"/>
                     <constraint firstItem="hy9-qn-uLo" firstAttribute="leading" secondItem="fgG-3b-vfQ" secondAttribute="trailing" constant="7.5" id="tlr-0j-s8C"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="colorIndicator" destination="42e-AR-VYg" id="uKp-VK-JNk"/>
                 <outlet property="icon" destination="fgG-3b-vfQ" id="HGD-TU-WJx"/>
                 <outlet property="mainLabel" destination="hy9-qn-uLo" id="VDh-ZO-xrj"/>
             </connections>
