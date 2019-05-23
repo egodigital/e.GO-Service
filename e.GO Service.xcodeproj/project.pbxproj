@@ -15,6 +15,8 @@
 		C92F24CB2296A67400478C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92F24C92296A67400478C8C /* Main.storyboard */; };
 		C92F24D02296A67500478C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92F24CF2296A67500478C8C /* Assets.xcassets */; };
 		C92F24D32296A67500478C8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92F24D12296A67500478C8C /* LaunchScreen.storyboard */; };
+		DC235B292296C2150014FE7E /* ServiceTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC235B282296C2150014FE7E /* ServiceTypeCell.xib */; };
+		DC235B2B2296C2B80014FE7E /* ServiceTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C92F24D22296A67500478C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C92F24D42296A67500478C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D44E77515FA92C8827C22430 /* Pods_e_GO_Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e_GO_Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC235B282296C2150014FE7E /* ServiceTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTypeCell.xib; sourceTree = "<group>"; };
+		DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTypeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +106,22 @@
 				C915DF3B2296AC6F008CBC8D /* API */,
 				C92F24C52296A67400478C8C /* AppDelegate.swift */,
 				C92F24C72296A67400478C8C /* ViewController.swift */,
+				DC235B272296C1FA0014FE7E /* View */,
 				C92F24C92296A67400478C8C /* Main.storyboard */,
 				C92F24CF2296A67500478C8C /* Assets.xcassets */,
 				C92F24D12296A67500478C8C /* LaunchScreen.storyboard */,
 				C92F24D42296A67500478C8C /* Info.plist */,
 			);
 			path = "e.GO Service";
+			sourceTree = "<group>";
+		};
+		DC235B272296C1FA0014FE7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC235B282296C2150014FE7E /* ServiceTypeCell.xib */,
+				DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,7 @@
 				C92F24D32296A67500478C8C /* LaunchScreen.storyboard in Resources */,
 				C92F24D02296A67500478C8C /* Assets.xcassets in Resources */,
 				C92F24CB2296A67400478C8C /* Main.storyboard in Resources */,
+				DC235B292296C2150014FE7E /* ServiceTypeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +247,7 @@
 			files = (
 				C92F24C82296A67400478C8C /* ViewController.swift in Sources */,
 				C915DF3D2296AC7B008CBC8D /* API.swift in Sources */,
+				DC235B2B2296C2B80014FE7E /* ServiceTypeCell.swift in Sources */,
 				C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */,
 				C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */,
 			);
