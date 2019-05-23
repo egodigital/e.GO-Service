@@ -19,7 +19,7 @@ struct ChargeLocation: Codable {
     }
     
     struct ChargePoint: Codable {
-        let power: Int
+        let power: Double
         let count: Int
     }
     

@@ -1,6 +1,4 @@
-{
-    "status": "ok",
-    "chargelocations": [
+[
         {
             "chargepoints": [
                 {
@@ -964,7 +962,7 @@
                 "lat": 50.814602,
                 "lng": 6.82379
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Erftstadt/Wohnmobilplatz-Max-Planck-Strasse-1/1274/",
             "fault_report": false,
             "verified": false
@@ -996,7 +994,7 @@
                 "lat": 50.8536,
                 "lng": 6.15257
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Alsdorf/Private-Ladebox-Pirolweg-14/2566/",
             "fault_report": false,
             "verified": true
@@ -1434,7 +1432,7 @@
                 "lat": 50.76659,
                 "lng": 6.47589
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Dueren/Privater-Ladepunkt-Am-alten-Kirchweg-9/6011/",
             "fault_report": false,
             "verified": true
@@ -2134,7 +2132,7 @@
                 "lat": 50.81205,
                 "lng": 6.7658
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Erftstadt/KIA-Schaeben-Frenzenstrasse-145/9150/",
             "fault_report": false,
             "verified": true
@@ -2378,7 +2376,7 @@
                 "lat": 50.789288,
                 "lng": 6.112176
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Aachen/P3-Group-Am-Kraftversorgungsturm-3/9758/",
             "fault_report": false,
             "verified": false
@@ -2674,7 +2672,7 @@
                 "lat": 50.870804,
                 "lng": 6.867728
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Huerth/Volksbank-Lindenstrasse/12814/",
             "fault_report": true,
             "verified": false
@@ -3582,7 +3580,7 @@
                 "lat": 50.872231,
                 "lng": 6.19021
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Alsdorf/EDS-Office-Werner-Heisenberg-Strasse-10/17181/",
             "fault_report": false,
             "verified": true
@@ -3748,7 +3746,7 @@
                 "lat": 50.762089,
                 "lng": 6.152793
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Aachen/Car-Center-Colonia-Smart-Center-Neuenhoferstrasse-188/18563/",
             "fault_report": false,
             "verified": false
@@ -5490,7 +5488,7 @@
                 "lat": 50.7696,
                 "lng": 6.488319
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Dueren/St-Augustinus-Krankenhaus-Im-Kleffert-9/29353/",
             "fault_report": false,
             "verified": true
@@ -5650,7 +5648,7 @@
                 "lat": 50.869354,
                 "lng": 6.181379
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Alsdorf/Guido-Schaefer-GmbH-Carl-Zeiss-Strasse-29/32165/",
             "fault_report": false,
             "verified": false
@@ -5906,7 +5904,7 @@
                 "lat": 50.860386,
                 "lng": 5.500626
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Belgien/Bilzen/McDonald-s-Tongersestraat-83/33880/",
             "fault_report": false,
             "verified": false
@@ -6084,7 +6082,7 @@
                 "lat": 50.782749,
                 "lng": 6.100835
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Aachen/STAWAG-Lombardenstrasse-10/34630/",
             "fault_report": false,
             "verified": true
@@ -6136,7 +6134,7 @@
                 "lat": 50.826176,
                 "lng": 6.898899
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Bruehl/Parkhaus-Giesler-Galerie-An-der-Alten-Brauerei/35183/",
             "fault_report": false,
             "verified": true
@@ -6200,7 +6198,7 @@
                 "lat": 50.834427,
                 "lng": 6.632518
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Kerpen-Niederbolheim/Hotel-Restaurant-Villa-Sophienhoehe-Sophienhoehe-1/35733/",
             "fault_report": false,
             "verified": true
@@ -6252,7 +6250,7 @@
                 "lat": 50.783215,
                 "lng": 6.096972
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Aachen/Parkhaus-Carolus-Thermen-Passstrasse-79/35860/",
             "fault_report": false,
             "verified": true
@@ -6780,7 +6778,7 @@
                 "lat": 50.851984,
                 "lng": 6.453843
             },
-            "network": false,
+            "network": "",
             "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Niederzier/Bahnhof-Huchem-Stammeln-Schwarzer-Weg-36/37907/",
             "fault_report": false,
             "verified": true
@@ -6942,4 +6940,4 @@
             "verified": true
         }
     ]
-}
+

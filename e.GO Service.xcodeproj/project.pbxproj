@@ -24,6 +24,7 @@
 		DC235B362297075D0014FE7E /* energyStations.json in Resources */ = {isa = PBXBuildFile; fileRef = DC235B352297075D0014FE7E /* energyStations.json */; };
 		DC235B38229707940014FE7E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B37229707940014FE7E /* MapViewController.swift */; };
 		DC235B3B22970AF70014FE7E /* ChargeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B3A22970AF70014FE7E /* ChargeLocation.swift */; };
+		DC235B3D2297120A0014FE7E /* UIColor+egoblue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B3C2297120A0014FE7E /* UIColor+egoblue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		DC235B352297075D0014FE7E /* energyStations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = energyStations.json; sourceTree = "<group>"; };
 		DC235B37229707940014FE7E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DC235B3A22970AF70014FE7E /* ChargeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeLocation.swift; sourceTree = "<group>"; };
+		DC235B3C2297120A0014FE7E /* UIColor+egoblue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+egoblue.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				DC235B2C2296C50C0014FE7E /* DetailView */,
 				DC235B282296C2150014FE7E /* ServiceTypeCell.xib */,
 				DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */,
+				DC235B3C2297120A0014FE7E /* UIColor+egoblue.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9D91A752296C5790053BB98 /* ServiceListViewController.swift in Sources */,
+				DC235B3D2297120A0014FE7E /* UIColor+egoblue.swift in Sources */,
 				C915DF3D2296AC7B008CBC8D /* API.swift in Sources */,
 				DC235B2B2296C2B80014FE7E /* ServiceTypeCell.swift in Sources */,
 				C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */,
