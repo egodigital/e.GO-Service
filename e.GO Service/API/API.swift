@@ -17,6 +17,25 @@ enum APIError: Error {
     case requestError
 }
 
+extension APIError: LocalizedError {
+    
+    var errorDescription: String? {
+        switch self {
+        case .emptyResponse:
+            return "Received an empty response."
+        case .invalidResponse:
+            return "Received an invalid response."
+        case .requestError:
+            return "Error while fetching data."
+        }
+    }
+    
+    var recoverySuggestion: String? {
+        return "Please try again in a few seconds."
+    }
+    
+}
+
 class API {
     
     let key: APIKey

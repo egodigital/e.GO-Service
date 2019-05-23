@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import STIErrorHandling
 
 class ServiceListViewController: UITableViewController {
     
@@ -49,6 +50,7 @@ class ServiceListViewController: UITableViewController {
             self.tableView.separatorStyle = .singleLine
         }.catch({ (error) in
             print(error)
+            self.presentError(error, completionHandler: nil)
         }).finally {
             DispatchQueue.main.async {
                 self.refreshController.endRefreshing()
