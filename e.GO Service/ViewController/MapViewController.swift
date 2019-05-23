@@ -15,6 +15,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
+        self.view.backgroundColor = .white
         let url = URL(string: "mapbox://styles/flashspys/cjw0y6itl2lip1cmbxdo0he15")
         let mapView = MGLMapView(frame: view.bounds, styleURL: url)
         mapView.delegate = self

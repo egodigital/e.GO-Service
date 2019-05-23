@@ -36,18 +36,22 @@ class ServiceTypeCell: UITableViewCell {
                     icon.image = UIImage(named: "brake")
                     mainLabel.text = "Brake fluid level is \(vehicleSignalList.brakeFluidLevelGood() ? "good" : "bad")"
                     colorIndicator.backgroundColor = vehicleSignalList.brakeFluidLevelGood() ? UIColor.green : UIColor.red
+                    self.selectionStyle = .none
                 case .wipingWater:
                     icon.image = UIImage(named: "wipingWater")
                     mainLabel.text = "Wiping water level is \(vehicleSignalList.wipingWaterLevelGood() ? "good" : "low")"
                     colorIndicator.backgroundColor = vehicleSignalList.wipingWaterLevelGood() ? UIColor.green : UIColor.red
+                    self.selectionStyle = .none
                 case .motorControlLamp:
                     icon.image = UIImage(named: "motor")
                     mainLabel.text = "Motor control lamp is \(vehicleSignalList.motorControlLamp == .on ? "on" : "off")"
                     colorIndicator.backgroundColor = vehicleSignalList.motorControlLamp == .off ? UIColor.green : UIColor.red
+                    self.selectionStyle = .none
                 case .batteryHealth:
                     icon.image = UIImage(named: "batteryHealth")
                     mainLabel.text = "Battery health is \(vehicleSignalList.brakeFluidLevelGood() ? "good" : "bad")"
                     colorIndicator.backgroundColor = vehicleSignalList.brakeFluidLevelGood() ? UIColor.green : UIColor.red
+                    self.selectionStyle = .none
                 }
             }
         }
