@@ -19,20 +19,13 @@ class ServiceTypeCell: UITableViewCell {
         case tire, brake, wipingWater, motorControlLamp, batteryHealth
     }
     
-    func tirePressureGood() -> Bool {
-        return vehicleSignalList.tirePressureBackLeft >= 2 &&
-            vehicleSignalList.tirePressureBackRight >= 2 &&
-            vehicleSignalList.tirePressureFrontLeft >= 2 &&
-            vehicleSignalList.tirePressureFrontRight >= 2
-    }
-    
     var type: CellType? {
         didSet {
             if let type = type {
                 switch type {
                 case .tire:
                     icon.image = UIImage(named: "tire")
-                    mainLabel.text = "Tire pressure is \(tirePressureGood() ? "good" : "bad")"
+                    mainLabel.text = "Tire pressure is \(vehicleSignalList.tirePressureGood() ? "good" : "bad")"
                 case .brake:
                     icon.image = UIImage(named: "tire")
                 case .wipingWater:

@@ -23,6 +23,11 @@ class TireServiceViewController: UIViewController {
             bottomRightLabel.text = String(signalList.tirePressureBackRight)
             topRightLabel.text = String(signalList.tirePressureFrontRight)
             topLeftLabel.text = String(signalList.tirePressureFrontLeft)
+            
+            [bottomLeftLabel, bottomRightLabel, topLeftLabel, topRightLabel].filter {Double($0!.text!)! <= 2}.forEach { (label) in
+                label?.textColor = .red
+            }
+            
         }
     }
     

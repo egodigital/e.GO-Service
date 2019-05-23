@@ -36,3 +36,12 @@ struct VehicleSignalList: Codable {
     let motorControlLamp: OnOffStatus
     
 }
+
+extension VehicleSignalList {
+    func tirePressureGood() -> Bool {
+        return self.tirePressureBackLeft >= 2 &&
+            self.tirePressureBackRight >= 2 &&
+            self.tirePressureFrontLeft >= 2 &&
+            self.tirePressureFrontRight >= 2
+    }
+}
