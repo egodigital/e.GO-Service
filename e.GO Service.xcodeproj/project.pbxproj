@@ -15,7 +15,6 @@
 		C92F24CB2296A67400478C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92F24C92296A67400478C8C /* Main.storyboard */; };
 		C92F24D02296A67500478C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92F24CF2296A67500478C8C /* Assets.xcassets */; };
 		C92F24D32296A67500478C8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92F24D12296A67500478C8C /* LaunchScreen.storyboard */; };
-		DCA29D2E2296B04E008867B9 /* BeaconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA29D2D2296B04E008867B9 /* BeaconController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		C92F24D22296A67500478C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C92F24D42296A67500478C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D44E77515FA92C8827C22430 /* Pods_e_GO_Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e_GO_Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCA29D2D2296B04E008867B9 /* BeaconController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 				C915DF3B2296AC6F008CBC8D /* API */,
 				C92F24C52296A67400478C8C /* AppDelegate.swift */,
 				C92F24C72296A67400478C8C /* ViewController.swift */,
-				DCA29D2D2296B04E008867B9 /* BeaconController.swift */,
 				C92F24C92296A67400478C8C /* Main.storyboard */,
 				C92F24CF2296A67500478C8C /* Assets.xcassets */,
 				C92F24D12296A67500478C8C /* LaunchScreen.storyboard */,
@@ -233,7 +230,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA29D2E2296B04E008867B9 /* BeaconController.swift in Sources */,
 				C92F24C82296A67400478C8C /* ViewController.swift in Sources */,
 				C915DF3D2296AC7B008CBC8D /* API.swift in Sources */,
 				C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */,
