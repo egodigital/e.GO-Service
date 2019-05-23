@@ -31,4 +31,15 @@ class TireServiceViewController: UIViewController {
         }
     }
     
+    @IBAction func callServiceWorker(_ sender: Any) {
+        let alertController = UIAlertController(title: "Request successful", message: "A service worker is on the way to your car.", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        
+        alertController.addAction(action)
+        
+        self.present(alertController, animated: true)
+    }
+    
+    
 }

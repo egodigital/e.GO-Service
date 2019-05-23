@@ -11,7 +11,6 @@ import STIErrorHandling
 
 class ServiceListViewController: UITableViewController {
     
-    private let refreshController = UIRefreshControl()
     
     var api: API!
     
@@ -28,16 +27,18 @@ class ServiceListViewController: UITableViewController {
         
         tableView.register(UINib(nibName: "ServiceTypeCell", bundle: nil), forCellReuseIdentifier: "serviceCell")
         
-        refreshController.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
-        self.tableView.refreshControl = refreshController
+        refreshControl = UIRefreshControl()
+        refreshControl!.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
                 
         tableView.separatorStyle = .none
         
         DispatchQueue.main.async {
-            self.refreshController.beginRefreshing()
+            self.refreshControl!.beginRefreshing()
+            self.update()
+            let offsetPoint = CGPoint(x: 0, y: -176)
+            self.tableView.setContentOffset(offsetPoint, animated: true)
         }
         
-        self.update()
     }
     
     @objc func refresh(_ sender: Any) {
@@ -53,7 +54,7 @@ class ServiceListViewController: UITableViewController {
             self.presentError(error, completionHandler: nil)
         }).finally {
             DispatchQueue.main.async {
-                self.refreshController.endRefreshing()
+                self.refreshControl!.endRefreshing()
             }
         }
     }

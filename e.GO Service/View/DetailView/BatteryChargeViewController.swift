@@ -29,11 +29,11 @@ class BatteryChargeViewController: UIViewController {
         
         let height = self.view.frame.height - self.view.safeAreaInsets.bottom - self.view.safeAreaInsets.top
         
-        UIView.animate(withDuration: 0.5) {
+        UIView.animate(withDuration: 0.5, delay: 0, options: [UIView.AnimationOptions.curveEaseOut], animations: {
             self.topConstraint.constant = height * CGFloat((1-charge))
             self.batteryChargeView.backgroundColor = UIColor(hue: CGFloat((charge) * 120)/360, saturation: 1, brightness: 1, alpha: 1)
             self.view.layoutIfNeeded()
-        }
+        }, completion: nil)
         
         let duration: Double = 0.35 //seconds
         let endValue: Int = 100-Int(vehicleSignalList.batteryCharge)
