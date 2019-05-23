@@ -19,6 +19,8 @@
 		DC235B2B2296C2B80014FE7E /* ServiceTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */; };
 		DC235B2E2296C5250014FE7E /* TireServiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC235B2D2296C5250014FE7E /* TireServiceViewController.storyboard */; };
 		DC235B302296C6800014FE7E /* TireServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B2F2296C6800014FE7E /* TireServiceViewController.swift */; };
+		DC235B322296E9790014FE7E /* BatteryChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC235B312296E9790014FE7E /* BatteryChargeViewController.swift */; };
+		DC235B342296E9840014FE7E /* BatteryChargeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC235B332296E9840014FE7E /* BatteryChargeViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		DC235B2A2296C2B80014FE7E /* ServiceTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTypeCell.swift; sourceTree = "<group>"; };
 		DC235B2D2296C5250014FE7E /* TireServiceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TireServiceViewController.storyboard; sourceTree = "<group>"; };
 		DC235B2F2296C6800014FE7E /* TireServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TireServiceViewController.swift; sourceTree = "<group>"; };
+		DC235B312296E9790014FE7E /* BatteryChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryChargeViewController.swift; sourceTree = "<group>"; };
+		DC235B332296E9840014FE7E /* BatteryChargeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatteryChargeViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 			children = (
 				DC235B2D2296C5250014FE7E /* TireServiceViewController.storyboard */,
 				DC235B2F2296C6800014FE7E /* TireServiceViewController.swift */,
+				DC235B332296E9840014FE7E /* BatteryChargeViewController.storyboard */,
+				DC235B312296E9790014FE7E /* BatteryChargeViewController.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 				C92F24CB2296A67400478C8C /* Main.storyboard in Resources */,
 				DC235B2E2296C5250014FE7E /* TireServiceViewController.storyboard in Resources */,
 				DC235B292296C2150014FE7E /* ServiceTypeCell.xib in Resources */,
+				DC235B342296E9840014FE7E /* BatteryChargeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +300,7 @@
 				C915DF402296AE2C008CBC8D /* VehicleSignalList.swift in Sources */,
 				DC235B302296C6800014FE7E /* TireServiceViewController.swift in Sources */,
 				C92F24C62296A67400478C8C /* AppDelegate.swift in Sources */,
+				DC235B322296E9790014FE7E /* BatteryChargeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

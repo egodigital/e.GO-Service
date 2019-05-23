@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dGI-4U-so6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Battery Charge View Controller-->
+        <scene sceneID="B5S-Er-2jL">
+            <objects>
+                <viewController id="dGI-4U-so6" customClass="BatteryChargeViewController" customModule="e_GO_Service" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rta-Hc-ijD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slv-69-mjO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery Charge is at %d %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idh-70-EiC">
+                                <rect key="frame" x="74" y="51" width="266" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="slv-69-mjO" firstAttribute="trailing" secondItem="50g-WD-K5p" secondAttribute="trailing" id="OkA-4o-TS6"/>
+                            <constraint firstItem="slv-69-mjO" firstAttribute="leading" secondItem="50g-WD-K5p" secondAttribute="leading" id="P5N-ct-8Dg"/>
+                            <constraint firstItem="idh-70-EiC" firstAttribute="centerX" secondItem="50g-WD-K5p" secondAttribute="centerX" id="QKQ-BK-dld"/>
+                            <constraint firstItem="slv-69-mjO" firstAttribute="top" secondItem="50g-WD-K5p" secondAttribute="top" id="gvb-0K-zEA"/>
+                            <constraint firstAttribute="bottom" secondItem="slv-69-mjO" secondAttribute="bottom" id="kPt-Bb-ENe"/>
+                            <constraint firstItem="idh-70-EiC" firstAttribute="bottom" secondItem="slv-69-mjO" secondAttribute="top" constant="-8" id="px5-jd-Gon"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="50g-WD-K5p"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="batteryChargeView" destination="slv-69-mjO" id="gop-5p-egA"/>
+                        <outlet property="mainLabel" destination="idh-70-EiC" id="Pnd-fB-hwB"/>
+                        <outlet property="topConstraint" destination="gvb-0K-zEA" id="ZKB-4Z-Abh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiG-q2-LBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+</document>

@@ -96,6 +96,11 @@ class ServiceListViewController: UITableViewController {
             let vc = UIStoryboard(name: "TireServiceViewController", bundle: nil).instantiateInitialViewController() as! TireServiceViewController
             vc.vehicleSignalList = statusList
             self.navigationController?.pushViewController(vc, animated: true)
+        case .batteryCharge:
+            let vc = UIStoryboard(name: "BatteryChargeViewController", bundle: nil).instantiateInitialViewController() as! BatteryChargeViewController
+            vc.vehicleSignalList = statusList
+            self.navigationController?.pushViewController(vc, animated: true)
+
         default:
             break
         }
