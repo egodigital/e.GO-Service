@@ -40,6 +40,9 @@ class ServiceListViewController: UITableViewController {
     func update() {
         api.vehicleSignalList().done { (list) in
             self.statusList = list
+            DispatchQueue.main.async {
+                self.refreshController.endRefreshing()
+            }
         }.cauterize()
     }
     
@@ -55,6 +58,7 @@ class ServiceListViewController: UITableViewController {
         
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "serviceCell") as? ServiceTypeCell else { return UITableViewCell() }
+        cell.vehicleSignalList = statusList
         
         switch indexPath.row {
         case 0:
