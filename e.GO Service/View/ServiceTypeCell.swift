@@ -30,7 +30,7 @@ class ServiceTypeCell: UITableViewCell {
                     colorIndicator.backgroundColor = vehicleSignalList.batteryChargeGood() ? UIColor.green : UIColor.red
                 case .tire:
                     icon.image = UIImage(named: "tire")
-                    mainLabel.text = "Tire pressure is \(vehicleSignalList.tirePressureGood() ? "good" : "bad")"
+                    mainLabel.text = "Tire pressure is \(vehicleSignalList.tirePressureGood() ? "good" : "low")"
                     colorIndicator.backgroundColor = vehicleSignalList.tirePressureGood() ? UIColor.green : UIColor.red
                 case .brake:
                     icon.image = UIImage(named: "brake")
