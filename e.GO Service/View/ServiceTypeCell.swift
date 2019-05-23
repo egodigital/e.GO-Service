@@ -70,5 +70,5 @@ class ServiceTypeCell: UITableViewCell {
             colorIndicator.backgroundColor = color
         }
     }
-    
+
 }

@@ -24,24 +24,14 @@ class ServiceListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.clearsSelectionOnViewWillAppear = true
+        
         tableView.register(UINib(nibName: "ServiceTypeCell", bundle: nil), forCellReuseIdentifier: "serviceCell")
         
         refreshController.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
         self.tableView.refreshControl = refreshController
         
         self.tableView.rowHeight = 130
-        
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 100))
-        let button = UIButton()
-        button.setTitle("Wanna see some cool stuff?", for: .normal)
-        view.addSubview(button)
-        button.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        button.setTitleColor(.black, for: .normal)
-        button.addTarget(self, action: #selector(pressedButton(_:)), for: .touchUpInside)
-        view.layoutIfNeeded()
-        self.tableView.tableHeaderView = view
         
         tableView.separatorStyle = .none
         
@@ -79,21 +69,25 @@ class ServiceListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            return MapCell()
+        }
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "serviceCell") as? ServiceTypeCell else { return UITableViewCell() }
         cell.vehicleSignalList = statusList
         
         switch indexPath.row {
-        case 0:
-            cell.type = .batteryCharge
         case 1:
-            cell.type = .tire
+            cell.type = .batteryCharge
         case 2:
-            cell.type = .brake
+            cell.type = .tire
         case 3:
-            cell.type = .wipingWater
+            cell.type = .brake
         case 4:
-            cell.type = .motorControlLamp
+            cell.type = .wipingWater
         case 5:
+            cell.type = .motorControlLamp
+        case 6:
             cell.type = .batteryHealth
         default:
             break
@@ -102,6 +96,12 @@ class ServiceListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let map = MapViewController()
+            self.navigationController?.pushViewController(map, animated: true)
+            return
+        }
+        
         let type = (self.tableView(tableView, cellForRowAt: indexPath) as! ServiceTypeCell).type!
         switch type {
         case .tire:
@@ -118,8 +118,4 @@ class ServiceListViewController: UITableViewController {
         }
     }
     
-    @objc func pressedButton(_ button: UIButton) {
-        let map = MapViewController()
-        self.navigationController?.pushViewController(map, animated: true)
-    }
 }
