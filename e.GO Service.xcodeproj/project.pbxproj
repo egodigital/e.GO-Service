@@ -56,6 +56,7 @@
 		DC235B3C2297120A0014FE7E /* UIColor+egoblue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+egoblue.swift"; sourceTree = "<group>"; };
 		DC235B3E229720A40014FE7E /* CalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
 		DC235B402297232C0014FE7E /* CalloutSubview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalloutSubview.xib; sourceTree = "<group>"; };
+		DC235B42229828710014FE7E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +108,7 @@
 		C92F24B92296A67400478C8C = {
 			isa = PBXGroup;
 			children = (
+				DC235B42229828710014FE7E /* README.md */,
 				C92F24C42296A67400478C8C /* e.GO Service */,
 				C92F24C32296A67400478C8C /* Products */,
 				BC0E016FC311E9B682856E68 /* Pods */,
