@@ -17,7 +17,7 @@ class ServiceTypeCell: UITableViewCell {
     var vehicleSignalList: VehicleSignalList!
     
     enum CellType: CaseIterable {
-        case tire, brake, wipingWater, motorControlLamp, batteryHealth, batteryCharge
+        case tirePressure, brake, wipingWater, motorControlLamp, batteryHealth, batteryCharge, tireHealth
     }
     
     var type: CellType? {
@@ -28,7 +28,7 @@ class ServiceTypeCell: UITableViewCell {
                     icon.image = UIImage(named: "batteryCharge")
                     mainLabel.text = "Battery charge is \(vehicleSignalList.batteryChargeGood() ? "good" : "low")"
                     colorIndicator.backgroundColor = vehicleSignalList.batteryChargeGood() ? UIColor.green : UIColor.red
-                case .tire:
+                case .tirePressure:
                     icon.image = UIImage(named: "tire")
                     mainLabel.text = "Tire pressure is \(vehicleSignalList.tirePressureGood() ? "good" : "low")"
                     colorIndicator.backgroundColor = vehicleSignalList.tirePressureGood() ? UIColor.green : UIColor.red
@@ -54,6 +54,12 @@ class ServiceTypeCell: UITableViewCell {
                     icon.image = UIImage(named: "batteryHealth")
                     mainLabel.text = "Battery health is \(vehicleSignalList.brakeFluidLevelGood() ? "good" : "bad")"
                     colorIndicator.backgroundColor = vehicleSignalList.brakeFluidLevelGood() ? UIColor.green : UIColor.red
+                    self.selectionStyle = .none
+                    self.accessoryType = .none
+                case .tireHealth:
+                    icon.image = UIImage(named: "tireHealth")
+                    mainLabel.text = "Tire health is \(vehicleSignalList.tireHealthGood() ? "good" : "bad")"
+                    colorIndicator.backgroundColor = vehicleSignalList.tireHealthGood() ? UIColor.green : UIColor.red
                     self.selectionStyle = .none
                     self.accessoryType = .none
                 }

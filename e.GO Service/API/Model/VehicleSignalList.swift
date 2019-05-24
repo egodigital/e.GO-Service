@@ -25,6 +25,7 @@ struct VehicleSignalList: Codable {
         case tirePressureFrontRight = "tire_pressure_front_right"
         case motorControlLamp = "motor_control_lamp"
         case batteryCharge = "battery_state_of_charge"
+        case mileage
     }
 
     let batteryHealth: Double
@@ -36,6 +37,7 @@ struct VehicleSignalList: Codable {
     let tirePressureFrontRight: Double
     let batteryCharge: Double
     let motorControlLamp: OnOffStatus
+    let mileage: Int
     
 }
 
@@ -62,6 +64,10 @@ extension VehicleSignalList {
     
     func batteryChargeGood() -> Bool {
         return batteryCharge > 50
+    }
+    
+    func tireHealthGood() -> Bool {
+        return mileage <= 40000
     }
     
 }
