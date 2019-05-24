@@ -27,7 +27,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
             make.edges.equalToSuperview()
         }
         mapView.setCenter(CLLocationCoordinate2D(latitude: 50.781588, longitude: 6.046536), zoomLevel: 14, animated: false)
-        
+        mapView.showsUserLocation = true
         var pointAnnotations = [MGLPointAnnotation]()
         for chargeLocation in ChargeLocation.loadLocations() {
             let point = MGLPointAnnotation()
